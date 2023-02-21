@@ -19,7 +19,13 @@ Aşağıdakileri yapın:
 
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
+const surucuYasi = 25;
 
+if (surucuYasi > 18) {
+  console.log(true);
+} else {
+  console.log(false);
+}
 
 
 /*
@@ -33,6 +39,14 @@ Aşağıdakileri yapınız:
 
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
+let birinciDeger = 12;
+let ikinciDegeri = 7;
+
+if (birinciDeger > ikinciDegeri) {
+  birinciDeger = 4;
+  console.log(birinciDeger);
+}
+
 
 
 
@@ -48,6 +62,9 @@ Aşağıdakileri yapın:
 
    İPUCU: Number metoduna bakabilirsin
 */
+const stringSayi = '1999';
+const numberSayi = Number(stringSayi);
+console.log(numberSayi);
 
 
 
@@ -64,7 +81,11 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamlayın:
 function carpma(/*buraya kodunu yazabilirsin*/){
   /*buraya kodunu yazabilirsin*/
 }
+function carpma(a, b) {
+  return a * b;
+}
 
+console.log(carpma(3, 4));
 
 
 
@@ -77,9 +98,10 @@ Aşağıdakileri yapın:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
-}
+function kopeginYasi(x){return 7*x
+  }
+console.log(kopeginYasi(5));
+
 
 
 
@@ -116,6 +138,23 @@ function oyun(oyuncu, bilgisayar){
 Şimdi kendi seçtiğiniz bir seçime karşı bilgisayarın rastgele oluşturduğu seçimi yukarıda yazdığınız oyun fonsiyonu ile oynayın ve sonucu console'a yazdırın.
 Örn: console.log(oyun("Makas",bilgisayarinSecimi()))
 */
+function oyun(oyuncu, bilgisayar){
+  if(oyuncu === bilgisayar){return "Beraberlik";}
+  else if ((oyuncu == 'Taş' && bilgisayar == 'Makas') || (oyuncu == 'Makas' && bilgisayar == 'Kağıt') || (oyuncu == 'Kağıt' && bilgisayar == 'Taş'))
+  {return "Kazandın!";}
+  else {return "Kaybettin!";}
+  }
+  
+  
+  let bilgisayarRandom = Math.random();
+  console.log(bilgisayarRandom);
+  let bilgisayarHamle;
+  if(bilgisayarRandom <= 0.30){bilgisayarHamle ='Taş';}
+  else if (0.30 < bilgisayarRandom && bilgisayarRandom <= 0.60){bilgisayarHamle = 'Kağıt';}
+  else {bilgisayarHamle = 'Makas';}
+  console.log(bilgisayarHamle);
+  
+  console.log(oyun('Kağıt',bilgisayarHamle));
 
 /* Görev 4 : Metrik Dönüştürücü */
 
@@ -131,7 +170,12 @@ function milDonusturucu(/*buraya kodunu yazabilirsin*/){
   /*buraya kodunu yazabilirsin*/
 }
 
+function milDonusturucu(a){
+  return 1.618*a;
+ 
+}
 
+console.log(milDonusturucu(20));
 
 //Görev 4b - Santimetreden Feet
 /*
@@ -143,9 +187,12 @@ Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yapın:
 Google'da arama ipucu: "feet cm dönüştürme"
 */
 
-function feetDonusturucu(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function feetDonusturucu(a){
+  return a/30.17
+  
 }
+console.log(feetDonusturucu(100));
+
 
 
 
@@ -162,7 +209,7 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yapın:
 4. Bu döngüde, her seferinde cocukSarkisi fonsiyonu çalışsın ve console.log'a dönen metni yazdırsın.
 */
 
-function cocukSarkisi(/*buraya kodunu yazabilirsin*/){
+function cocukSarkisi(sayi){
       /*buraya kodunu yazabilirsin*/
 }
 
