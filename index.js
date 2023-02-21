@@ -210,8 +210,14 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yapın:
 */
 
 function cocukSarkisi(sayi){
-      /*buraya kodunu yazabilirsin*/
+  let metin = sayi +"küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!"
+     return metin; /*buraya kodunu yazabilirsin*/
 }
+
+
+
+for(let i=5; i>0; i=i-1)
+  console.log(cocukSarkisi(i));
 
 
 /* Görev 6 : Not Hesaplayıcı */
@@ -229,9 +235,14 @@ Aşağdakileri notHesapla fonksiyonunda yapın.
  dönün
 */
 
-function notHesapla(/*buraya kodunu yazabilirsin*/){
-/*buraya kodunu yazabilirsin*/
+function notHesapla(not){
+  if(90 <= not) {return 'A aldın';}
+  else if(80 <= not) {return 'B aldın';}
+  else if(70 <= not) {return 'C aldın';}
+  else if(60 <= not) {return 'D aldın';}
+  else {return 'F aldın';}
 }
+console.log(notHesapla(83));
 
 
 
